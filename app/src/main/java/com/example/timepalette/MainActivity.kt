@@ -20,18 +20,18 @@ class MainActivity : ComponentActivity() {
     lateinit var title : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.note)
-        var asdf = false
-        btn = findViewById(R.id.btn)
-        title = findViewById(R.id.titleText)
-        btn.setOnClickListener{
-            if(!asdf){
-                title.text = getString(R.string.hello_world)
-                asdf = true
-            } else {
-                title.text = "La La La"
-                asdf = false
-            }
-        }
+        setContentView(R.layout.calenderlayout)
+//        var asdf = false
+//        btn = findViewById(R.id.btn)
+//        title = findViewById(R.id.titleText)
+//        btn.setOnClickListener{
+//            if(!asdf){
+//                title.text = getString(R.string.hello_world)
+//                asdf = true
+//            } else {
+//                title.text = "La La La"
+//                asdf = false
+//            }
+//        }
     }
 }
