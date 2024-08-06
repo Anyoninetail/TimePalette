@@ -14,126 +14,95 @@
             android:id="@+id/menuButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/round_menu_24"
-            android:background="#00000000"/>
+            android:background="#00000000"
+            android:src="@drawable/round_menu_24" />
 
         <ImageButton
             android:id="@+id/searchButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/round_search_24"
             android:layout_toLeftOf="@+id/moveToToday"
-            android:background="#00000000"/>
+            android:background="#00000000"
+            android:src="@drawable/round_search_24" />
+
         <ImageButton
             android:id="@+id/moveToToday"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/round_calendar_today_24"
             android:layout_alignParentRight="true"
-            android:background="#00000000"/>
+            android:background="#00000000"
+            android:src="@drawable/round_calendar_today_24" />
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:gravity="center"
-        >
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Month"
-            android:textSize="24dp"
-            />
+            android:textSize="24dp" />
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="20dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="일"
             android:textAlignment="center"
-            android:textColor="#ef806c"/>
+            android:textColor="#ef806c" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="월"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="화"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="수"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="목"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="금"
-            android:textAlignment="center"/>
+            android:textAlignment="center" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="토"
             android:textAlignment="center"
-            android:textColor="#53c5ff"/>
+            android:textColor="#53c5ff" />
 
     </LinearLayout>
-
-    <!--날짜 한 칸 레이아웃-->
-    <LinearLayout
-        android:id="@+id/oneDayLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <!--날짜-->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="1"
-            android:textAlignment="center"/>
-
-        <!--일정 목록 넣을 LinearLayout-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!--일정 하나-->
-            <TextView
-                android:id="@+id/onePlan"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:text="샘플 일정"
-                android:background="#80ef806c"
-                android:gravity="center_vertical"
-                android:paddingLeft="2dp"
-                android:layout_margin="2dp"/>
-
-        </LinearLayout>
-        
-    </LinearLayout>
-
-
 </LinearLayout>
